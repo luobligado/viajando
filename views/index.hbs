@@ -1,0 +1,223 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero scroll_section">
+        <div class="col-lg-3 offset-lg-2">
+
+            <h1>Listo para viajar?</h1>
+            <p>Estas por hacer ese viaje que tanto esperaste y no sabes a donde ir? Llegaste al sitio indicado! Navega
+                nuestra pagina y encontra las mejores recomendaciones e ideas para empezar a planear y disfrutar tus
+                vacaciones! Que esperas?</p>
+        </div>
+    </div>
+</div>
+
+<div class="row my-3">
+    <div id="destinos" class="col-md-5 offset-md-2 py-3 scroll_section">
+        <h2>Destinos</h2>
+        <ul class="lista-destinos">
+            {{#each novedades}}
+            <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}"><img src="images/IMG_0908.jpg">{{titulo}}</a>
+            </li>
+           {{/each}}
+        </ul>
+        
+    </div>
+
+    <!-- Modal -->
+    {{#each novedades}}
+    <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel1">{{titulo}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <h4>{{subtitulo}} <br></h4>
+                    
+                    <p>{{cuerpo}}</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+
+
+    <!--fin modal-->
+
+
+    <div class="col-md-3 my-3">
+        <div class="rounded py-5 testimonios">
+            <h2 class="text-center">Testimonios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>Muy buena data,ya quiero volver a Paris!</h5>
+                            <p>Laura, Caballito</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Gracias a ustedes fue el viaje mas divertido que tuve!</h5>
+                            <p>Francisco, Alberdi</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Gracias por compartirnos estas ideas sin dudas son los mejores!</h5>
+                            <p>Esmeralda, Yerbal</p>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--incio nosotros-->
+
+    <div id="historia" class="row align-items-center py-4 scroll_section">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="images/IMG_0325.JPG" alt="historia 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="images/IMG_2506.JPG" alt="historia 2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="images/IMG_0501.JPG" alt="historia 3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Nuestra familia siempre ha sido apasionada por los viajes y ha disfrutado de explorar juntos diferentes
+                rincones del mundo. Cada aventura ha sido una oportunidad para crear recuerdos inolvidables y fortalecer
+                nuestros lazos. Ahora, después de tantas travesías, hemos decidido compartir nuestros conocimientos y
+                consejos a través de esta página web. Aquí encontrarás nuestras historias emocionantes, destinos
+                favoritos y
+                valiosos consejos prácticos para que puedas planificar tus propias aventuras. </p>
+        </div>
+    </div>
+
+
+    <div id="nosotros" class="row align-items-stretch my-3 staff py-4 scroll_section">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Nosotros</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <div class="card" style="max-width: 180px;">
+                        <img src="images/IMG-6066.jpg" class="card-img-top" alt="Blair">
+                        <div class="card-body">
+                            <h5 class="card-title">Blair</h5>
+                            <p class="card-text"> Estudiante, dedicada y curiosa! Siempre busco nuevos desafios y
+                                aprender mas! En
+                                mi tiempo libre mi pasion es viajar </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="max-width: 180px;">
+                        <img src="images/IMG-6064.jpg" class="card-img-top" alt="Jim">
+                        <div class="card-body">
+                            <h5 class="card-title">Jim</h5>
+                            <p class="card-text"> Mi hobbie mas grande es planear mis aventuras y sueño con podervisitar
+                                todos los
+                                continentes del mundo </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="max-width: 180px;">
+                        <img src="images/IMG-6063.jpg" class="card-img-top" alt="Pam">
+                        <div class="card-body">
+                            <h5 class="card-title">Pam</h5>
+                            <p class="card-text"> Trabajo como recepcionista y estudio arte, y participo en la comunidad
+                                haciendo
+                                murales para los turistas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="max-width: 180px;">
+                        <img src="images/IMG-6065.jpg" class="card-img-top" alt="Cindy">
+                        <div class="card-body">
+                            <h5 class="card-title">Cindy</h5>
+                            <p class="card-text">Soy contadora, y amo a los animales! Mi sueño es abrir un refugio en
+                                cada lugar del
+                                mundo con animales al que pueda ir</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="conocenos" class="row py-4 scroll_section">
+            <div class="col-md-4 offset-md-2">
+                <h2>Visitanos</h2>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2194088910887!2d-58.42268252477177!3d-34.59861295722778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d4cf1563%3A0x686de505d84c67e6!2sAv.%20Medrano%20951%2C%20C1179AAQ%20CABA!5e0!3m2!1ses!2sar!4v1685902025485!5m2!1ses!2sar"></iframe>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mt-4 mt-sm-0">
+                <h2> Contactanos</h2>
+                <form class="row g-3" action="/" method="post">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com" name="email">
+                    </div>
+                    <div class="col-12">
+                        <label for="tel" class="form-label"> Tel</label>
+                        <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+               
+            </div>
+
+
+        </div>

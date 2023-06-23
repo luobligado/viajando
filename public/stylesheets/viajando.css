@@ -1,0 +1,105 @@
+/* font-family: 'Alfa Slab One', cursive; */
+
+footer {
+    background-color: #aaa;
+}
+
+
+h1,
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.hero {
+    background: url(../images/IMG_2032.JPG) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+
+}
+
+.lista-destinos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-destinos li {
+    margin: 4px 0;
+}
+
+.lista-destinos li a {
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+
+.lista-destinos li a:hover {
+    color: #212529;
+    background-color: #dadada;
+
+}
+
+.lista-destinos li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+
+}
+
+.lista-destinos li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+
+.testimonios {
+    background-color: #bee4f3;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+
+.staff {
+    background-color: #efefef;
+}
+
+.card-img-top {
+    width: 179px;
+    height: 200px;
+}
+.mapa iframe {
+    width: 40%;
+    aspect-ratio: 1.2;
+ }
+
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+
+ .conocenos {
+    width: 150%;
+    aspect-ratio: 1.2;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}
